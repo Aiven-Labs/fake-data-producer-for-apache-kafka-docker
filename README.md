@@ -29,9 +29,9 @@ The Dockerized Fake Data Producer For Aiven for Apache Kafka, requires:
 Setup
 ============
 
-#. clone the repository and navigate to the `fake-data-producer-for-apache-kafka-docker` folder
+1. clone the repository and navigate to the `fake-data-producer-for-apache-kafka-docker` folder
 
-#. copy the `conf/env.conf.sample` to `conf/env.conf` and edit the following parameters
+2. copy the `conf/env.conf.sample` to `conf/env.conf` and edit the following parameters
 
 | Parameter Name | Parameter Value                                                                                                              |
 |----------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -48,19 +48,19 @@ Setup
 
 To know more about parameters, check the underline [Apache Kafka Python Fake Data Producer](https://github.com/aiven/python-fake-data-producer-for-apache-kafka) repository.
 
-#. Build the docker image
+3. Build the docker image
 
 ```
 docker build -t fake-data-producer-for-apache-kafka-docker .
 ```
 
-#. Run the docker image
+4. Run the docker image
 
 ```
 docker run fake-data-producer-for-apache-kafka-docker
 ```
 
-#. Check the Fake messages being produced
+5. Check the Fake messages being produced
 
 ![Streaming Data](images/streaming-data.gif)
 
