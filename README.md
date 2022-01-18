@@ -42,9 +42,10 @@ Setup
 |REPLICATION     | Number of replicas to set when creating a topic (this will **NOT** alter existing topics)                                    |
 |NR_MESSAGES     | Overall number of messages to produce (0 for unlimited))                                                                     |
 |MAX_TIME        | Max time in seconds between messages (0 for no wait)                                                                         |
-|SUBJECT         | Fake data subject (One between `pizza`, `userbehaviour`, `stocks`, `realstocks` (using the yahoo finance apis) and `metrics`)|
+|SUBJECT         | Fake data subject (One between `pizza`, `userbehaviour`, `stock`, `realstock` (using the yahoo finance apis) and `metric`)   |
 |USERNAME        | Aiven account username                                                                                                       |
 |TOKEN           | Aiven account token                                                                                                          |
+
 
 To know more about parameters, check the underline [Apache Kafka Python Fake Data Producer](https://github.com/aiven/python-fake-data-producer-for-apache-kafka) repository.
 
