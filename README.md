@@ -76,5 +76,4 @@ Contact
 Bug reports and patches are very welcome, please post them as GitHub issues and pull requests at https://github.com/aiven/fake-data-producer-for-apache-kafka-docker . 
 To report any possible vulnerabilities or other serious issues please see our [security](SECURITY.md) policy.
 
-
-Apache Kafka is a registered trademark of The Apache Software Foundation and has been licensed for use by Aiven. Aiven has no affiliation with and is not endorsed by The Apache Software Foundation.
+Apache Kafka is either a registered trademark or trademark of the Apache Software Foundation in the United States and/or other countries. Aiven has no affiliation with and is not endorsed by The Apache Software Foundation.
