@@ -1,15 +1,15 @@
-Dockerized Fake Data Producer For Aiven for Apache Kafka
-========================================================
+Dockerized Fake Data Producer For Aiven for Apache Kafka®
+=========================================================
 
-This project aims at creating a Docker version of the [Apache Kafka Python Fake Data Producer](https://github.com/aiven/python-fake-data-producer-for-apache-kafka). 
+This project aims at creating a Docker version of the [Apache Kafka® Python Fake Data Producer](https://github.com/aiven/python-fake-data-producer-for-apache-kafka). 
 
 Overview
 ========
 
-The Dockerized Fake Data Producer For Aiven for Apache Kafka, requires:
+The Dockerized Fake Data Producer For Aiven for Apache Kafka®, requires:
 
 * An Aiven valid account and login Token
-* An Aiven for Kafka instance already created
+* An Aiven for Apache Kafka instance already created
 
 The `run.sh` will:
 
@@ -24,7 +24,7 @@ Prerequisites
 The Dockerized Fake Data Producer For Aiven for Apache Kafka, requires:
 
 * An Aiven valid account and login Token
-* An Aiven for Kafka instance already created
+* An Aiven for Apache Kafka instance already created
 
 Setup
 ============
@@ -35,8 +35,8 @@ Setup
 
 | Parameter Name | Parameter Value                                                                                                              |
 |----------------|------------------------------------------------------------------------------------------------------------------------------|
-|PROJECT_NAME    | Name of the Aiven Project where the Aiven for Kafka service is running                                                       |
-|SERVICE_NAME    | Name of the Aiven for Kafka service running                                                                                  |
+|PROJECT_NAME    | Name of the Aiven Project where the Aiven for Apache Kafka service is running                                                       |
+|SERVICE_NAME    | Name of the Aiven for Apache Kafka service running                                                                                  |
 |TOPIC           | Name of the Topic to write messages in                                                                                       |
 |PARTITIONS      | Number of partitions to set when creating a topic (this will **NOT** alter existing topics)                                  |
 |REPLICATION     | Number of replicas to set when creating a topic (this will **NOT** alter existing topics)                                    |
@@ -75,3 +75,6 @@ Contact
 ============
 Bug reports and patches are very welcome, please post them as GitHub issues and pull requests at https://github.com/aiven/fake-data-producer-for-apache-kafka-docker . 
 To report any possible vulnerabilities or other serious issues please see our [security](SECURITY.md) policy.
+
+
+Apache Kafka is a registered trademark of The Apache Software Foundation and has been licensed for use by Aiven. Aiven has no affiliation with and is not endorsed by The Apache Software Foundation.
