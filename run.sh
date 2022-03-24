@@ -17,9 +17,14 @@ EOD
 
 
 # Get Hostname and Port
-HOSTNAME=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --format {'service_uri'} | grep $SERVICE_NAME  | awk -F  ":" '{print $1}') 
-PORT=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --format {'service_uri'} | grep $SERVICE_NAME  | awk -F  ":" '{print $2}')
+HOSTNAME=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.component=="kafka").host') 
+PORT=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.component=="kafka").port')
 echo $HOSTNAME $PORT
+
+if [ $PRIVATELINK == "YES" ]; then
+  HOSTNAME=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.route=="privatelink" && .component=="kafka").host') 
+  PORT=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.route=="privatelink" && .component=="kafka").port')
+fi
 
 # Get Certificates
 rm -rf ./certs
