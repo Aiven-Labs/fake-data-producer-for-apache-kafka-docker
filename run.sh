@@ -22,8 +22,8 @@ PORT=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.co
 echo $HOSTNAME $PORT
 
 if [ $PRIVATELINK == "YES" ]; then
-  HOSTNAME=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.route=="privatelink" && .component=="kafka").host') 
-  PORT=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.route=="privatelink" && .component=="kafka").port')
+  HOSTNAME=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.route=="privatelink" and .component=="kafka").host') 
+  PORT=$(avn service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.route=="privatelink" and .component=="kafka").port')
 fi
 
 # Get Certificates
