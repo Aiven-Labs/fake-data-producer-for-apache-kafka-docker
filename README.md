@@ -45,6 +45,7 @@ Setup
 |SUBJECT         | Fake data subject (One between `pizza`, `userbehaviour`, `stock`, `realstock` (using the yahoo finance apis) and `metric`)   |
 |USERNAME        | Aiven account username                                                                                                       |
 |TOKEN           | Aiven account token                                                                                                          |
+|PRIVATELINK     | Flag to say if the service is under a privatelink, to fetch the correct URL                                                  |
 
 
 To know more about parameters, check the underline [Apache Kafka Python Fake Data Producer](https://github.com/aiven/python-fake-data-producer-for-apache-kafka) repository.
