@@ -35,8 +35,8 @@ Setup
 
 | Parameter Name | Parameter Value                                                                                                              |
 |----------------|------------------------------------------------------------------------------------------------------------------------------|
-|PROJECT_NAME    | Name of the Aiven Project where the Aiven for Apache Kafka service is running                                                       |
-|SERVICE_NAME    | Name of the Aiven for Apache Kafka service running                                                                                  |
+|PROJECT_NAME    | Name of the Aiven Project where the Aiven for Apache Kafka service is running                                                |
+|SERVICE_NAME    | Name of the Aiven for Apache Kafka service running                                                                           |
 |TOPIC           | Name of the Topic to write messages in                                                                                       |
 |PARTITIONS      | Number of partitions to set when creating a topic (this will **NOT** alter existing topics)                                  |
 |REPLICATION     | Number of replicas to set when creating a topic (this will **NOT** alter existing topics)                                    |
@@ -46,6 +46,7 @@ Setup
 |USERNAME        | Aiven account username                                                                                                       |
 |TOKEN           | Aiven account token                                                                                                          |
 |PRIVATELINK     | Flag to say if the service is under a privatelink, to fetch the correct URL                                                  |
+|SECURITY        | Flag to say if the Kafka service is using SSL or not, possible values are ``SSL`` or ``PLAINTEXT``                           |
 
 
 To know more about parameters, check the underline [Apache Kafka Python Fake Data Producer](https://github.com/aiven/python-fake-data-producer-for-apache-kafka) repository.

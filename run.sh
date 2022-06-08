@@ -40,4 +40,5 @@ python python-fake-data-producer-for-apache-kafka/main.py --cert-folder ./certs/
   --topic-name $TOPIC \
   --nr-messages $NR_MESSAGES \
   --max-waiting-time $MAX_TIME \
-  --subject $SUBJECT
+  --subject $SUBJECT	\
+  --security-protocol $SECURITY
