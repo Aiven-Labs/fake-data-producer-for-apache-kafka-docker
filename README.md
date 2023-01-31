@@ -67,6 +67,8 @@ docker run -t -i fake-data-producer-for-apache-kafka-docker
 
 ![Streaming Data](images/streaming-data.gif)
 
+You can stop the fake data generator with Control-C
+
 License
 ============
 Dockerized Fake Data Producer For Aiven for Apache Kafka is licensed under the Apache license, version 2.0. Full license text is available in the [LICENSE](LICENSE) file.
