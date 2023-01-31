@@ -60,12 +60,14 @@ docker build -t fake-data-producer-for-apache-kafka-docker .
 4. Run the docker image
 
 ```
-docker run fake-data-producer-for-apache-kafka-docker
+docker run -t -i fake-data-producer-for-apache-kafka-docker
 ```
 
 5. Check the Fake messages being produced
 
 ![Streaming Data](images/streaming-data.gif)
+
+You can stop the fake data generator with Control-C
 
 License
 ============
