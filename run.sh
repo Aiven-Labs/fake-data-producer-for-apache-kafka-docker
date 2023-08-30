@@ -1,11 +1,6 @@
 # Read env parameters
 . conf/env.conf
 
-# Get repository
-git clone https://github.com/aiven/python-fake-data-producer-for-apache-kafka.git
-pip install -r python-fake-data-producer-for-apache-kafka/requirements.txt
-pip install aiven-client
-
 # Get Hostname and Port
 HOSTNAME=$(avn --auth-token $TOKEN service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.component=="kafka").host') 
 PORT=$(avn --auth-token $TOKEN service get $SERVICE_NAME --project $PROJECT_NAME --json | jq -r '.components[] | select(.component=="kafka").port')
